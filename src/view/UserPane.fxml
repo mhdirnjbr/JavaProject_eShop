@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<?import javafx.scene.control.ChoiceBox?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="671.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UserController">
+   <children>
+      <VBox layoutX="20.0" layoutY="22.0" spacing="15.0">
+         <children>
+            <Label text="ID">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="UserName">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Password">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Budget">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Address">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="Tel">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label text="RoleId">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <VBox layoutX="87.0" layoutY="22.0" prefHeight="430.0" prefWidth="129.0" spacing="10.0">
+         <children>
+            <TextField fx:id="idField" />
+            <TextField fx:id="usernameField" />
+            <TextField fx:id="passwordField" />
+            <TextField fx:id="budgetField" />
+            <TextField fx:id="addressField" />
+            <TextField fx:id="phoneNumberField"/>
+            <ChoiceBox fx:id="roleField" />
+         </children>
+      </VBox>
+      <HBox layoutX="26.0" layoutY="300.0" spacing="10.0">
+         <children>
+            <Button fx:id="insertButton" mnemonicParsing="false" onAction="#insertButton" prefHeight="30.0" prefWidth="60.0" text="Insert" />
+            <Button fx:id="updateButton" mnemonicParsing="false" onAction="#updateButton" prefHeight="30.0" prefWidth="60.0" text="Update" />
+            <Button fx:id="deleteButton" mnemonicParsing="false" onAction="#deleteButton" prefHeight="30.0" prefWidth="60.0" text="Delete" />
+         </children>
+      </HBox>
+      <TableView fx:id="TableView" layoutX="238.0" layoutY="22.0" prefHeight="400.0" prefWidth="600.0">
+        <columns>
+            <TableColumn fx:id="idColumn" prefWidth="35.0" text="ID" />
+            <TableColumn fx:id="usernameColumn" prefWidth="90.0" text="UserName" />
+            <TableColumn fx:id="passwordColumn" prefWidth="90.0" text="Password" />
+            <TableColumn fx:id="budgetColumn" prefWidth="60.0" text="Budget ID" />
+            <TableColumn fx:id="addressColumn" prefWidth="60.0" text="Address ID" />
+            <TableColumn fx:id="phoneNumberColumn" prefWidth="100.0" text="Tel" />
+            <TableColumn fx:id="roleColumn" prefWidth="60.0" text="Role ID" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
